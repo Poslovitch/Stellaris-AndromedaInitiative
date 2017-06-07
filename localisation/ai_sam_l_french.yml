@@ -1,0 +1,4 @@
+﻿l_french:
+ ai_sam_activation.1.name: "S.A.M."
+ ai_sam_activation.1.desc: "[Root.GetRulerTitle], nous sommes parvenus, après de plusieurs décennies d'échecs, à réactiver le Simulateur Adaptatif Matriciel qu'a conçu votre père. Ses capacités faciliteront grandement notre tâche."
+ ai_sam_activation.1.a: "Mettez-moi en liaison avec SAM"

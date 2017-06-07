@@ -1,0 +1,50 @@
+namespace: ai_sam_activation
+
+# Start event
+country_event = {
+	id = ai_sam_activation.1
+	title = "ai_sam_activation.1.name"
+	desc = "ai_sam_activation.1.desc"
+	picture = GFX_evt_sentient_AI
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_ai = no
+	}
+	
+	option = {
+		id = "ai_sam_activation.1.a"
+		add_modifier = {
+			modifier = "ai_sam_supervision"
+			days = -1
+		}
+		
+		hidden_effect = {
+			country_event = { id = "ai_sam_activation.2" }
+		}
+	}
+}
+
+# Diplomatic - SAM
+country_event = {
+	id = ai_sam_activation.2
+	title = "ai_sam_activation.2.name"
+	desc = "ai_sam_activation.2.desc"
+	
+	is_triggered_only = yes
+	
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = ai1
+		planet_background = FROM
+		graphical_culture = ai_01
+		city_level = FROM
+		room = FROM
+	}
+	
+	option = {
+		id = "ai_sam_activation.2.a"
+	}
+}

@@ -1,0 +1,70 @@
+namespace = ai_subspace_beacon
+
+# Broken civilian ship
+ship_event = {
+	id = ai_subspace_beacon.1
+	title = "ai_subspace_beacon.1.name"
+	desc = "ai_subspace_beacon.1.desc"
+	picture = GFX_evt_space_debris
+	location = FROM
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { orbital_deposit_tile = { clear_deposits = yes } }
+	}
+	
+	option = {
+		name = "ai_subspace_beacon.1.a"
+		FROM = {
+			orbital_deposit_tile = {
+				add_deposit = d_engineering_deposit
+			}
+		}
+	}
+	
+	option = {
+		name = "ai_subspace_beacon.1.b"
+		FROM = {
+			orbital_deposit_tile = {
+				add_deposit = d_minerals_deposit
+			}
+		}
+	}
+}
+
+# Automated Broadcast
+ship_event = {
+	id = ai_subspace_beacon.2
+	title = "ai_subspace_beacon.2.name"
+	desc = "ai_subspace_beacon.2.desc"
+	picture = GFX_evt_ship_in_orbit
+	location = FROM
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { orbital_deposit_tile = { clear_deposits = yes } }
+	}
+	
+	option = {
+		name = "ai_subspace_beacon.2.a"
+		FROM = {
+			orbital_deposit_tile = {
+				add_deposit = d_engineering_deposit
+			}
+		}
+	}
+}
+
+# Failure
+ship_event = {
+	id = ai_subspace_beacon.100
+	title = "ai_subspace_beacon.100.name"
+	desc = "ai_subspace_beacon.100.desc"
+	picture = GFX_evt_ship_in_orbit
+	location = FROM
+	is_triggered_only = yes
+	
+	option = {
+		name = "ai_subspace_beacon.100.a"
+	}
+}

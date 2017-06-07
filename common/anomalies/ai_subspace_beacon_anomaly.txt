@@ -1,0 +1,23 @@
+# Broken civilian ship
+anomaly = {
+	event = ai_subspace_beacon.1
+	category = ai_subspace_beacon_category
+	
+	weight = 1
+	
+	potential = {
+		always = yes
+	}
+}
+
+# Automated Broadcast
+anomaly = {
+	event = ai_subspace_beacon.2
+	category = ai_subspace_beacon_category
+	
+	weight = 1
+	
+	potential = {
+		always = yes
+	}
+}

@@ -1,0 +1,16 @@
+﻿l_french:
+ ai_subspace_beacon_category: "Balise mystérieuse"
+ ai_subspace_beacon_category_desc: "L'astéroïde $H[Root.GetName]$! semble cacher une balise. Un signal subspatial est émis à intervalles irréguliers."
+ 
+ ai_subspace_beacon.1.name: "Epave d'un vaisseau civil"
+ ai_subspace_beacon.1.desc: "Les étranges signaux provenant de $Y[From.From.GetName]$! se sont avérés être les échos de nos radars sur une étrange épave de vaisseau spatial dénué d'armements. Selon le rapport de §Y[Root.GetLeaderName]§!, ce vaisseau s'est écrasé sur cet astéroïde il y a plusieurs dizaines d'années. Bien qu'il soit de conception similaire à la nôtre, il serait intéressant de l'étudier. Ou nous pourrions également le démanteler pour en récupérer quelques ressources."
+ ai_subspace_beacon.1.a: "Nous pourrions apprendre quelque chose de cette épave"
+ ai_subspace_beacon.1.b: "Nous avons besoin de ressources!"
+ 
+ ai_subspace_beacon.2.name: "Signal automatique"
+ ai_subspace_beacon.2.desc: "En nous basant sur le rapport de §Y[Root.GetLeaderName]§!, nous avons pu déduire l'origine de l'étrange signal émis par l'astéroïde §Y[From.From.GetName]§! : une balise située à sa surface. Si le contenu des messages nous reste inconnu, nous savons qu'il y en a plusieurs, émis à des points spécifiques de l'orbite de l'astéroïde. De plus, cette balise semble être d'une conception particulièrement avancée. Nous y gagnerons à l'étudier."
+ ai_subspace_beacon.2.a: "Assurément!"
+ 
+ ai_subspace_beacon.100.name: "Anomalie subspatiale"
+ ai_subspace_beacon.100.desc: "L'étude de l'astéroïde §Y[From.From.GetName]§! ne nous a rien apporté. Le signal semble se générer spontanément au centre de celui-ci, sans que §Y[Root.GetLeaderName]§! n'ait été capable de trouver quoi que ce soit qui sorte de l'ordinaire. Malgré une certaine fascination, le signal a aisément pu être reproduit en laboratoire. §Y[From.From.GetName]§! n'a plus aucun secret à nous dévoiler."
+ ai_subspace_beacon.100.a: "Certaines choses dépassent notre compréhension"

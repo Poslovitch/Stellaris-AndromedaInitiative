@@ -1,0 +1,161 @@
+namespace: ai_dark_brightness_virus
+
+# Start event
+# Whenever a scientific leader dies, it rolls if the event chain starts
+country_event = {
+	id = ai_dark_brightness_virus.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		is_ai = no
+		NOT = { has_country_flag = ai_dark_brightness_virus_flag }
+		num_owned_planets > 3
+		FROM = {
+			leader_class = scientist
+			has_trait = leader_trait_expertise_biology
+		}
+	}
+	
+	# Franchement Jays, t'a vraiment pas de chance si ça t'arrive xD
+	immediate = {
+		random_list = {
+			90 = {}
+			10 = {
+				random_owned_planet = {
+					limit = {
+						is_colony = yes
+						is_capital = no
+					}
+					save_global_event_target_as: ai_dark_brightness_virus_source
+				}
+				country_event = { id = ai_dark_brightness_virus.2 days = 60 random = 15 }
+			}
+		}
+	}
+}
+
+# Show the event to the player
+country_event = {
+	id = ai_dark_brightness_virus.2
+	title = "ai_dark_brightness_virus.2.name"
+	desc = "ai_dark_brightness_virus.2.desc"
+	picture = GFX_evt_microscopic_life
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		set_country_flag = ai_dark_brightness_virus_flag
+	}
+	
+	option = {
+		name = "ai_dark_brightness_virus.2.a" # Investigate
+		event_target:ai_dark_brightness_virus_source = {
+			enable_special_project = {
+				name = "AI_CHASE_DBV_SOURCE"
+				location = this
+				owner = root
+			}
+		}
+	}
+	
+	option = {
+		name = "ai_dark_brightness_virus.2.b" # Don't take care
+	}
+}
+
+# Special project completed
+ship_event = {
+	id = ai_dark_brightness_virus.10
+	title = "ai_dark_brightness_virus.10.name"
+	desc = "ai_dark_brightness_virus.10.desc"
+	picture = GFX_evt_microscopic_life
+	location = FROM
+	is_triggered_only = yes
+	
+	option = {
+		name = "ai_dark_brightness_virus.10.a" # Start a vaccination campain
+		owner = { 
+			add_minerals = -75
+			add_modifier = {
+				modifier = "ai_vaccination_campain"
+				days = -1
+			}
+		}
+		hidden_effect = {
+			random_list = {
+				90 = { country_event = { id = ai_dark_brightness_virus.11 days = 60 } } # It worked!
+				10 = { country_event = { id = ai_dark_brightness_virus.20 days = 60 } } # Oups!
+			}
+		}
+	}
+	
+	option = {
+		name = "ai_dark_brightness_virus.10.b" # Order quarantine
+		owner = { add_influence = -50 }
+		hidden_effect = {
+			country_event = { id = ai_dark_brightness_virus.30 days = 1 } # Launch Quarantine
+		}
+	}
+}
+
+# Vaccination campain finished - it worked - stop the event chain
+country_event = {
+	id = ai_dark_brightness_virus.11
+	title = "ai_dark_brightness_virus.11.name"
+	desc = "ai_dark_brightness_virus.11.desc"
+	picture = GFX_evt_microscopic_life
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "ai_dark_brightness_virus.11.a" # The END :D
+		add_influence = 50
+		remove_modifier = "ai_vaccination_campain"
+	}
+}
+
+# Vaccination campain finished - it didn't work
+country_event = {
+	id = ai_dark_brightness_virus.20
+	title = "ai_dark_brightness_virus.20.name"
+	desc = "ai_dark_brightness_virus.20.desc"
+	picture = GFX_evt_microscopic_life
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "ai_dark_brightness_virus.20.a" # Order quarantine
+		add_influence = -75
+		hidden_effect = {
+			country_event = { id = ai_dark_brightness_virus.30 days = 1 } # Launch Quarantine
+		}
+	}
+}
+
+# Quarantine started
+country_event = {
+	id = ai_dark_brightness_virus.30
+	title = "ai_dark_brightness_virus.30.name"
+	desc = "ai_dark_brightness_virus.30.desc"
+	picture = GFX_evt_metropolis
+	
+	option = {
+		name = "ai_dark_brightness_virus.30.a"
+		add_modifier = {
+			modifier = "ai_quarantine"
+			days = -1
+		}
+	}
+}
+
+# Delayed virus mini-crisis... You shouldn't have done that =D!
+country_event = {
+	id = ai_dark_brightness_virus.100
+	title = "ai_dark_brightness_virus.100.name"
+	desc = "ai_dark_brightness_virus.100.desc"
+	picture = GFX_evt_microscopic_life
+	
+	is_triggered_only = yes
+}

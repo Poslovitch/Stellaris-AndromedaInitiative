@@ -1,0 +1,24 @@
+anomaly_category = {
+	key = "ai_subspace_beacon_category"
+	desc = "ai_subspace_beacon_category_desc"
+	picture = GFX_evt_mining_station
+	level = 2
+	
+	spawn_chance = {
+		modifier = {
+			add = 2
+			is_asteroid = yes
+		}
+	}
+	
+	on_spawn = {}
+	on_success = {}
+	
+	on_fail = {
+		ship_event = { id = ai_subspace_beacon.100 }
+	}
+	
+	on_critical_fail = {
+		ship_event = { id = ai_subspace_beacon.100 }
+	}
+}

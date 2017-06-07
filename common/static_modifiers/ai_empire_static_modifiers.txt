@@ -1,0 +1,21 @@
+ai_vaccination_campain = {
+	all_technology_research_speed = -0.15
+	influence_gain_mult = -0.05
+	building_time_mult = 0.05
+	icon = ""
+	icon_frame = 2
+}
+
+ai_sam_supervision = {
+	science_ship_survey_speed = 0.02
+	ship_anomaly_research_speed_mult = 0.02
+	ship_anomaly_generation_chance_mult = 0.05
+	ship_anomaly_fail_risk = -0.01
+	all_technology_research_speed = 0.03
+	country_sector_cap_add = 1
+	num_tech_alternatives_add = 1
+	navy_size_mult = 0.2
+	planet_colony_development_speed_mult = 0.01
+	icon = ""
+	icon_frame = 1
+}

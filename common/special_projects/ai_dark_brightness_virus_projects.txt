@@ -1,0 +1,21 @@
+special_project = {
+	key = "AI_CHASE_DBV_SOURCE"
+	cost = 0
+	days_to_research = 120
+	tech_department = society_technology
+	picture = GFX_evt_animal_wildlife
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill > 2
+	}
+	
+	on_success = {
+		ship_event = { id = ai_dark_brightness_virus.10 }
+	}
+	
+	on_fail = {}
+}
