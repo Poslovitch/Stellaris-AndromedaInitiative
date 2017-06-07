@@ -3,6 +3,6 @@
 # From = Leader
 on_leader_death = {
 	events = {
-		ai_dark_brightness_virus.1
+		#ai_dark_brightness_virus.1
 	}
 }

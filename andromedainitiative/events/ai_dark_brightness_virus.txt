@@ -1,4 +1,4 @@
-namespace: ai_dark_brightness_virus
+namespace = ai_dark_brightness_virus
 
 # Start event
 # Whenever a scientific leader dies, it rolls if the event chain starts
@@ -84,9 +84,11 @@ ship_event = {
 			}
 		}
 		hidden_effect = {
-			random_list = {
-				90 = { country_event = { id = ai_dark_brightness_virus.11 days = 60 } } # It worked!
-				10 = { country_event = { id = ai_dark_brightness_virus.20 days = 60 } } # Oups!
+			owner = {
+				random_list = {
+					90 = { country_event = { id = ai_dark_brightness_virus.11 days = 60 } } # It worked!
+					10 = { country_event = { id = ai_dark_brightness_virus.20 days = 60 } } # Oups!
+				}
 			}
 		}
 	}
@@ -95,7 +97,7 @@ ship_event = {
 		name = "ai_dark_brightness_virus.10.b" # Order quarantine
 		owner = { add_influence = -50 }
 		hidden_effect = {
-			country_event = { id = ai_dark_brightness_virus.30 days = 1 } # Launch Quarantine
+			owner = { country_event = { id = ai_dark_brightness_virus.30 days = 1 } } # Launch Quarantine
 		}
 	}
 }

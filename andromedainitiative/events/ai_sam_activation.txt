@@ -1,4 +1,4 @@
-namespace: ai_sam_activation
+namespace = ai_sam_activation
 
 # Start event
 country_event = {
