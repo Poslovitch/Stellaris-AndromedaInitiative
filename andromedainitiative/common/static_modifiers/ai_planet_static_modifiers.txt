@@ -5,3 +5,45 @@ ai_quarantine = {
 	icon = ""
 	icon_frame = 3
 }
+
+ai_wonder_skyflowers = {
+	
+	icon = ""
+	icon_frame = 1
+}
+
+ai_wonder_crystal_pyramide = {
+	
+	icon = ""
+	icon_frame = 1
+}
+
+ai_wonder_lights_city = {
+	
+	icon = ""
+	icon_frame = 1
+}
+
+ai_wonder_phobe_ocean = {
+	
+	icon = ""
+	icon_frame = 1
+}
+
+ai_wonder_chrysalis = {
+	
+	icon = ""
+	icon_frame = 1
+}
+
+ai_wonder_obillys_tower = {
+	
+	icon = ""
+	icon_frame = 1
+}
+
+ai_wonder_infinity_eye = {
+	
+	icon = ""
+	icon_frame = 1
+}

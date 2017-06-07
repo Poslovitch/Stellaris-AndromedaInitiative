@@ -143,6 +143,8 @@ country_event = {
 	desc = "ai_dark_brightness_virus.30.desc"
 	picture = GFX_evt_metropolis
 	
+	is_triggered_only = yes
+	
 	option = {
 		name = "ai_dark_brightness_virus.30.a"
 		add_modifier = {

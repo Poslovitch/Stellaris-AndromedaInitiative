@@ -14,10 +14,25 @@ country_event = {
 	}
 	
 	option = {
-		id = "ai_sam_activation.1.a"
+		name = "ai_sam_activation.1.a"
 		add_modifier = {
 			modifier = "ai_sam_supervision"
 			days = -1
+		}
+		
+		begin_event_chain = {
+			event_chain = "ai_tasks_find_nexus"
+			target = ROOT
+		}
+		
+		begin_event_chain = {
+			event_chain = "ai_tasks_establish_3_more_colonies"
+			target = ROOT
+		}
+		
+		begin_event_chain = {
+			event_chain = "ai_tasks_study_7_life_forms"
+			target = ROOT
 		}
 		
 		hidden_effect = {
@@ -37,7 +52,7 @@ country_event = {
 	diplomatic = yes
 	
 	picture_event_data = {
-		portrait = ai1
+		portrait = robot2
 		planet_background = FROM
 		graphical_culture = ai_01
 		city_level = FROM
@@ -45,6 +60,26 @@ country_event = {
 	}
 	
 	option = {
-		id = "ai_sam_activation.2.a"
+		name = "ai_sam_activation.2.a" # Objectifs
+		is_dialog_only = yes
+		response_text = "ai_sam_activation.2.a.response"
+	}
+	
+	option = {
+		name = "ai_sam_activation.2.b" # Mon père
+		is_dialog_only = yes
+		response_text = "ai_sam_activation.2.b.response"
+	}
+	
+	option = {
+		name = "ai_sam_activation.2.c" # Y a-t-il d'autres SAM?
+		is_dialog_only = yes
+		response_text = "ai_sam_activation.2.c.response"
+	}
+	
+	option = {
+		name = "ai_sam_activation.2.d" # Où serait le Nexus?
+		is_dialog_only = yes
+		response_text = "ai_sam_activation.2.d.response"
 	}
 }

@@ -1,0 +1,15 @@
+﻿l_french:
+ ai_tasks_find_nexus_title: "Retrouver le Nexus"
+ ai_tasks_find_nexus_desc: "/Une belle description/"
+ 
+ ai_tasks_establish_3_more_colonies_title: "Etablir 3 colonies supplémentaires"
+ ai_tasks_establish_3_more_colonies_desc: "/Une belle description/"
+ ai_established_colonies: "Colonies supplémentaires établies"
+ 
+ ai_tasks_study_7_life_forms_title: "Etudier les formes de vie existantes sur 7 planètes jugées \"d'intérêt\""
+ ai_tasks_study_7_life_forms_desc: "/Une belle description/"
+ ai_studied_life_forms: "Formes de vie extra-galactiques étudiées"
+ 
+ ai_tasks_andromeda_wonders_title: "Les Merveilles d'Andromède"
+ ai_tasks_andromeda_wonders_desc: "/Une belle description/"
+ ai_discovered_wonders: "Merveilles d'Andromède découvertes"

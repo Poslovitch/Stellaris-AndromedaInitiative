@@ -1,0 +1,13 @@
+ai_sr_ezo = {
+	AI_category = strategic_resource
+	tradable = yes
+	is_rare = yes
+	is_global = yes
+	
+	modifier = {
+		ship_interstellar_speed_mult = 0.75
+		ship_speed_mult = 0.15
+		ship_combat_speed_mult = 0.05
+		ship_evasion_mult = 0.05
+	}
+}
