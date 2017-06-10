@@ -1,8 +1,0 @@
-# Executed as a leader has died
-# This = Country
-# From = Leader
-on_leader_death = {
-	events = {
-		#ai_dark_brightness_virus.1
-	}
-}
