@@ -1,0 +1,67 @@
+avogadro_system = {
+	name = "Avogadro"
+	class = "sc_a"
+	flags = { avogadro }
+	
+	planet = {
+		name = "Avogadro"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Lorenzo"
+		class = "pc_molten"
+		orbit_distance = 30
+		orbit_angle = 30
+		size = 20
+		has_ring = no
+	}
+	
+	planet = {
+		name = "Romano"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = 70
+		size = 17
+		has_ring = yes
+	}
+	
+	planet = {
+		name = "Amedeo"
+		class = "pc_toxic"
+		orbit_distance = 50
+		orbit_angle = -128
+		size = 13
+		has_ring = yes
+	}
+	
+	planet = {
+		name = "Carlo"
+		class = "pc_gas_giant"
+		orbit_distance = 70
+		orbit_angle = 120
+		size = 35
+		has_ring = yes
+		flags = { nexus_homeworld }
+		
+		init_effect = {
+			create_ambient_object = {
+				type = "small_debris_object"
+				entity_offset_height = -15
+				location = this
+			}
+			
+			last_created_ambient_object = { 
+				set_location = {
+					target = prev
+					distance = 6
+					angle = 87
+				}
+			}
+		}
+	}
+}

@@ -20,23 +20,24 @@ country_event = {
 			days = -1
 		}
 		
-		begin_event_chain = {
-			event_chain = "ai_tasks_find_nexus"
-			target = ROOT
-		}
-		
-		begin_event_chain = {
-			event_chain = "ai_tasks_establish_3_more_colonies"
-			target = ROOT
-		}
-		
-		begin_event_chain = {
-			event_chain = "ai_tasks_study_7_life_forms"
-			target = ROOT
-		}
-		
 		hidden_effect = {
+			begin_event_chain = {
+				event_chain = "ai_tasks_find_nexus"
+				target = ROOT
+			}
+		
+			begin_event_chain = {
+				event_chain = "ai_tasks_establish_3_more_colonies"
+				target = ROOT
+			}
+		
+			begin_event_chain = {
+				event_chain = "ai_tasks_study_7_life_forms"
+				target = ROOT
+			}
+			
 			country_event = { id = "ai_sam_activation.2" }
+			country_event = { id = "ai_sam_activation.3" }
 		}
 	}
 }
@@ -81,5 +82,38 @@ country_event = {
 		name = "ai_sam_activation.2.d" # Où serait le Nexus?
 		is_dialog_only = yes
 		response_text = "ai_sam_activation.2.d.response"
+	}
+}
+
+# Generate Avogadro system
+event = {
+	id = ai_sam_activation.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			spawn_system = {
+				min_distance = 20
+				max_distance = 50
+				initializer = "avogadro_system"
+			}
+		}
+		
+		random_system = {
+			limit = { has_star_flag = avogadro }
+			random_system_planet = {
+				limit = { has_planet_flag = nexus_homeworld }
+				save_global_event_target_as = avogadro_nexus
+			}
+		}
+		
+		create_point_of_interest = {
+			id = nexus.1
+			name = "nexus_1_poi"
+			desc = "nexus_1_poi_desc"
+			event_chain = ai_tasks_find_nexus
+			location = event_target:avogadro_nexus
+		}
 	}
 }

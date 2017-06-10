@@ -1,6 +1,8 @@
 ﻿l_french:
  ai_tasks_find_nexus_title: "Retrouver le Nexus"
  ai_tasks_find_nexus_desc: "/Une belle description/"
+ nexus_1_poi: "Position prévue du Nexus"
+ nexus_1_poi_desc: "Selon le protocole de l'Initiative Andromède, le Nexus doit être en orbite autour de Carlo, la géante gazeuse du système Avogadro."
  
  ai_tasks_establish_3_more_colonies_title: "Etablir 3 colonies supplémentaires"
  ai_tasks_establish_3_more_colonies_desc: "/Une belle description/"
