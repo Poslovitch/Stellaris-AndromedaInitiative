@@ -1,4 +1,4 @@
-﻿l_french:
+﻿l_english:
  ai_sam_activation.1.name: "S.A.M."
  ai_sam_activation.1.desc: "[Root.GetRulerTitle], nous sommes parvenus, après plusieurs décennies d'échecs, à réactiver le Simulateur Adaptatif Matriciel qu'a conçu votre père.\nSes capacités de calcul faciliteront grandement notre tâche de colonisation, en assistant l'administration et la recherche."
  ai_sam_activation.1.a: "Mettez-moi en liaison avec SAM"

@@ -27,11 +27,6 @@ country_event = {
 			}
 		
 			begin_event_chain = {
-				event_chain = "ai_tasks_establish_3_more_colonies"
-				target = ROOT
-			}
-		
-			begin_event_chain = {
 				event_chain = "ai_tasks_study_7_life_forms"
 				target = ROOT
 			}

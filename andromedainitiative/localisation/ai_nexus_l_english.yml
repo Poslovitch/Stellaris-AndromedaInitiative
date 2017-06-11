@@ -1,0 +1,15 @@
+﻿l_english:
+ ai_nexus.1.name: "Le Nexus"
+ ai_nexus.1.desc: "Dès l'entrée dans le système Avogadro, nous n'avons reçu aucune réponse à nos tentatives de communications.\n\nIl y a un champ de débris en orbite autour de la géante gazeuse du système. L'hypothèse que celui-ci provienne du Nexus a été avancée, mais nous devons enquêter pour en être sûrs."
+ ai_nexus.1.a: "Enquêtez sur ces débris."
+ 
+ AI_DESTROYED_NEXUS_PROJECT: "Enquêter sur les débris"
+ AI_DESTROYED_NEXUS_PROJECT_DESC: "Un champ de débris a été retrouvé à la position prévue du Nexus. Nous devons savoir ce qu'il s'est passé."
+ 
+ ai_nexus.2.name: "Les restes du Nexus"
+ ai_nexus.2.desc: "Il n'y a plus de doutes possibles, ce champ de débris est tout ce qu'il reste du Nexus. Les différentes boîtes noires et les corps que nous avons retrouvés attestent cette dure réalité.\n\nNous n'avons toutefois retrouvé aucun corps de Krogans. Y a-t-il dess survivants?"
+ ai_nexus.2.a: "Nous tâcherons de les retrouver."
+ 
+ ai_nexus.3.name: "Le fantôme du Nexus"
+ ai_nexus.3.desc: "L'annonce de la destruction du Nexus a rendu la population fébrile. Beaucoup remettent en doute l'Initiative.\n\nCet incident déplorable risque de rendre beaucoup plus difficile notre installation dans Andromède."
+ ai_nexus.3.a: "Nous devons rester forts."
