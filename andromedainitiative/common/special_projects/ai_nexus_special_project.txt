@@ -1,8 +1,12 @@
 special_project = {
 	key = "AI_DESTROYED_NEXUS_PROJECT"
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_space_debris
+	
 	cost = 0
 	days_to_research = 180
 	tech_department = engineering_technology
+	
 	event_chain = ai_tasks_find_nexus
 	
 	event_scope = ship_event

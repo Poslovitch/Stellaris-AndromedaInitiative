@@ -5,6 +5,7 @@ ship_event = {
 	title = "ai_nexus.1.name"
 	desc = "ai_nexus.1.desc"
 	location = event_target:nexus_homeworld
+	picture = GFX_evt_space_debris
 	
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -39,9 +40,10 @@ ship_event = {
 
 ship_event = {
 	id = ai_nexus.2
-	title = "ai_nexus.2 name"
+	title = "ai_nexus.2.name"
 	desc = "ai_nexus.2.desc"
 	location = this
+	picture = GFX_evt_space_debris
 	
 	is_triggered_only = yes
 	
@@ -49,6 +51,26 @@ ship_event = {
 		name = "ai_nexus.2.a"
 		owner = {
 			end_event_chain = "ai_tasks_find_nexus"
+		}
+		hidden_effect = {
+			country_event = { id = ai_nexus.3 days = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = ai_nexus.3
+	title = "ai_nexus.3.name"
+	desc = "ai_nexus.3.desc"
+	picture = GFX_evt_space_debris
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "ai_nexus.3.a"
+		add_modifier = {
+			modifier = "ai_nexus_lost"
+			days = 360
 		}
 	}
 }
