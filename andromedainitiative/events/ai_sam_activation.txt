@@ -109,7 +109,7 @@ event = {
 		}
 		
 		create_point_of_interest = {
-			id = nexus.1
+			id = nexus_poi.1
 			name = "nexus_1_poi"
 			desc = "nexus_1_poi_desc"
 			event_chain = ai_tasks_find_nexus

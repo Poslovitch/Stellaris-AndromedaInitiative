@@ -1,0 +1,21 @@
+special_project = {
+	key = "AI_DESTROYED_NEXUS_PROJECT"
+	cost = 0
+	days_to_research = 180
+	tech_department = engineering_technology
+	event_chain = ai_tasks_find_nexus
+	
+	event_scope = ship_event
+	
+	requirements = {
+		shipclass_science_ship = 1
+		leader = scientist
+		skill = 3
+	}
+	
+	on_success = {
+		ship_event = { id = ai_nexus.2 }
+	}
+	
+	on_fail = {}
+}

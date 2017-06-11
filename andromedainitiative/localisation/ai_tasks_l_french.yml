@@ -1,15 +1,15 @@
 ﻿l_french:
  ai_tasks_find_nexus_title: "Retrouver le Nexus"
- ai_tasks_find_nexus_desc: "/Une belle description/"
+ ai_tasks_find_nexus_desc: "Nous n'avons reçu aucune nouvelle du Nexus depuis notre arrivée dans Andromède. Le protocole exige que nous reprenions contact."
  nexus_1_poi: "Position prévue du Nexus"
  nexus_1_poi_desc: "Selon le protocole de l'Initiative Andromède, le Nexus doit être en orbite autour de Carlo, la géante gazeuse du système Avogadro."
  
  ai_tasks_establish_3_more_colonies_title: "Etablir 3 colonies supplémentaires"
- ai_tasks_establish_3_more_colonies_desc: "/Une belle description/"
+ ai_tasks_establish_3_more_colonies_desc: "La réussite de l'Initiative dépend de notre capacité à nous installer durablement dans cette galaxie. Nous devons installer davantage de colonies!"
  ai_established_colonies: "Colonies supplémentaires établies"
  
  ai_tasks_study_7_life_forms_title: "Etudier les formes de vie existantes sur 7 planètes jugées \"d'intérêt\""
- ai_tasks_study_7_life_forms_desc: "/Une belle description/"
+ ai_tasks_study_7_life_forms_desc: "Les analyses préliminaires de certaines planètes ont révélées de potentielles formes de vie intéressantes. Nous devrions aller enquêter."
  ai_studied_life_forms: "Formes de vie extra-galactiques étudiées"
  
  ai_tasks_andromeda_wonders_title: "Les Merveilles d'Andromède"

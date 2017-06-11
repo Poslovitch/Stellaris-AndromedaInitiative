@@ -1,0 +1,54 @@
+namespace = ai_nexus
+
+ship_event = {
+	id = ai_nexus.1
+	title = "ai_nexus.1.name"
+	desc = "ai_nexus.1.desc"
+	location = event_target:nexus_homeworld
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		is_ai = no
+		owner = {
+			has_event_chain = ai_tasks_find_nexus
+		}
+		from = {
+			has_star_flag = avogadro
+		}
+	}
+	
+	immediate = {
+		owner = {
+			remove_point_of_interest = nexus_poi.1
+		}
+	}
+	
+	option = {
+		name = "ai_nexus.1.a"
+		event_target:nexus_homeworld = {
+			enable_special_project = {
+				name = "AI_DESTROYED_NEXUS_PROJECT"
+				location = this
+				owner = root.owner
+			}
+		}
+	}
+}
+
+ship_event = {
+	id = ai_nexus.2
+	title = "ai_nexus.2 name"
+	desc = "ai_nexus.2.desc"
+	location = this
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "ai_nexus.2.a"
+		owner = {
+			end_event_chain = "ai_tasks_find_nexus"
+		}
+	}
+}
